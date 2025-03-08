@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="signup.html" method="GET" enctype="multipart/form-data">
+      <div>
+        <!-- to comment :ctrl+/ to uncomment use same ctrl+/-->
+        <!-- input attr: value, sizem maxlength , minlength-->
+        <label for="username">User Name</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="User Name"
+          required
+        />
+      </div>
+
+      <br />
+      
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          required
+        />
+      </div>
+     
+      <br />
+      <div>
+        <label for="age">Age</label>
+        <input
+          type="number"
+          name="age"
+          id="age"
+          placeholder="yyyy"
+          min="20"
+          step="10"
+          required
+        />
+      </div>
+      <br />
+     
+      <div> 
+        <!-- type can be url, search, color, tel -->
+        <label for="dob">Date Of Birth </label>
+        <input type="date" name="dob" id="dob" min="1900-01-01">
+      </div>
+      <br>
+      
+      <div> 
+        <label for="email">Email Id</label>
+        <input type="email" name="email" id="email" placeholder="abc@mail.com">
+      </div>
+      <br>
+      
+      <div>
+        <label for="textarea">Additional Comments</label>
+        <textarea name="textarea" id="textarea" cols="10" rows="3">...</textarea>
+      </div>
+      <br>
+     
+      <div>
+        <!-- <select name="state" id="state" multiple > for multiple slection in the dropdown -->
+        <label for="state">State</label>
+            <select name="state" id="state" >
+            <option value="TamilNadu">TamilNadu</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Karnataka">Karnataka</option>
+        </select>
+      </div>
+      <br>
+            
+      <div>
+        <!-- name should be same for a group for exclusive check in -->
+         <!-- set value for radio button so query will consist of that value instead of gender = on -->
+        <input type="radio" name="gender" id="female" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="male" value = "Male">
+        <label for="male">Male</label>
+       </div>
+       <br>
+       
+       <div>
+        <input type="checkbox" name="agree" id="agree">
+        <label for="agree">I agree to terms and conditions</label>
+       </div>
+       <!-- hidden used when front end sends message to backend will be displayed in query -->
+        <div>
+            <input type="hidden" name="hidden" id="hidden" value ="123">
+        </div>
+       <br>
+       
+       <div>
+        <!-- If file is used give enctype in the form tag as it is going to be large, we send it in multipart -->
+        <label for="file">Resume</label>
+        <input type="file" id="file" name="file">
+       </div>
+    <br>
+      <button type="submit">SignUp</button>
+      <button type="reset">Reset</button>
+      <input type="image" name="img" id="img" src="download.png" width="80">
+    </form>
+  </body>
+</html>

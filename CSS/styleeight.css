@@ -1,0 +1,15 @@
+.box{
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    /* background-color: aquamarine; */
+    /* linear, radial gradient effect */
+
+    /* background: linear-gradient(to left,green, yellow,red); */
+    /* 90deg, 45deg instead of pos */
+    /* background: linear-gradient(to top right, green ,yellow 40%,red ); */
+    /* background: repeating-linear-gradient( green 10px,yellow 30px ); */
+    background: repeating-radial-gradient( green 10px,yellow 30px );
+
+    /* background: radial-gradient(green, yellow); */
+}

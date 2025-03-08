@@ -1,0 +1,56 @@
+/* universal selector *{}  used when style component is applied to all elements */
+
+*{
+    color:red;
+}
+/* type/element selector h1{}* grouping selector: h1,p,h2{}/
+h1,h2,h3{
+    color: green ;
+}
+/* id selector:to select an id use # 
+The id of an element is unique within a page, so the id selector is used to select one unique element!*/
+
+#colorcode{
+
+    color:blueviolet;
+}
+
+/*class selector: class is used if style is needed in all the related html pages  use . for class. Multiple element*/
+
+.bluebold
+{
+    font-style: italic;
+}
+
+/* child selector : to select only child from parent */
+
+div>p{
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*descendant selector: a tag in the descendant*/
+body a{
+    color: green;
+}
+
+/* sibling selector:h4 sibling of h1 should be colored in blueviolet*/
+
+h1~h4
+{
+    color: blueviolet;
+}
+
+/* adjacent sibling selector */
+h4+p{
+    color: black;
+}
+
+/* priority is in the order, specific rule instead of general rule.  */
+/* to change priority use !important */
+
+a {
+    color: greenyellow !important;
+}
+
+/* inheritance: inheriting certain property */

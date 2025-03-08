@@ -1,0 +1,159 @@
+
+/* define a variable for easy use  var(--yellow)*/
+:root{
+    --yellow: #FFC54D;
+}
+body,h2
+{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url('../Images/pexels-nickcollins-1274609.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+   
+}
+
+header a{
+    text-decoration: none;
+    color: green;
+    font-weight: bolder;
+    min-width: 120px;
+}
+
+header{
+    display: flex;
+    padding: 1em;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    
+}
+#logo{
+    flex: 3;
+    font-size: 1.25em;
+    min-width: 260px;
+}
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    flex: 1;
+}
+nav a:hover{
+    color: var(--yellow);
+}
+
+header h2 i, nav a i{
+    margin-right: .5em;
+}
+
+.maintext
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    padding: 2em;
+    
+
+}
+.tag1{
+    color: rgba(0, 128, 0, 0.851);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.tag2{
+    color:red ;
+    
+}
+.maintext div{
+    margin-top: .75em;
+}
+
+.maintext button
+{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: #FFC54D;
+    color: whitesmoke;
+    border: 1px solid yellow;
+}
+
+.menu
+{
+    display: grid;
+    color: whitesmoke;
+    grid-template-columns: repeat(auto-fit,minmax(242px,1fr));
+    background: linear-gradient(to right,orange, rgba(74, 49, 3, 0.621));
+}
+
+#menuheading,#locheading
+{
+    background: linear-gradient(to right,orange, rgba(74, 49, 3, 0.621));
+    font-size: 2.5em;
+    color: red;
+    display: flex;
+    justify-content: center;
+
+}
+.menu th{
+    color: green;
+    font-size: 1.8em;
+}
+
+table
+{
+    width: 100%;
+    padding: 1em;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+.menu td:nth-child(1)
+{
+    flex: 1;
+    justify-self: left;
+}
+.menu td:nth-child(2)
+{
+    justify-self: right;
+}
+.locations
+{
+    background: linear-gradient(to right,orange, rgba(74, 49, 3, 0.621));
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.locations h2{
+    color: green;
+    margin-bottom:.8em;
+    
+}
+
+.locations div{
+    flex: 1;
+    padding: 1em;
+    min-width: 225px;
+}
+
+footer
+{
+    background-color: black;
+    color: whitesmoke;
+    padding: .25em 1em;
+}
+
+/* pexels for pics
+font awesome: copy cdn links in link and copy the
+icon link for icons(no pro) in appropriate place */

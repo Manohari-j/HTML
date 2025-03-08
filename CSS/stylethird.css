@@ -1,0 +1,38 @@
+ul{
+    /*disc, circle,square,none*/
+    /* list-style-type:square ; */
+    /* list-style-image: url("/media/border.jpg"); */
+    /* for big para */
+    /* list-style-position: inside; */
+    list-style: inside circle;
+}
+ol{
+    list-style-type: decimal;
+}
+li{
+    margin: 10px;
+}
+table{
+    width:300px;
+    margin: auto;
+    /* border-spacing: 10px; */
+    /* border-collapse: collapse; */
+}
+th{
+    text-transform: uppercase;
+    text-align: left;
+    border-bottom: 2px solid black;
+    padding:10px;
+}
+td{
+    padding:10px;
+    border: 5px solid aquamarine;
+}
+.time{
+    text-align: right;
+}
+/*pseudo selector to select alternate row*/
+tr:nth-child(even)
+{
+    background-color: aquamarine;
+}

@@ -1,0 +1,26 @@
+.p1
+{
+    background-color: bisque;
+}
+.p2
+{
+    background-color: grey;
+}
+.p3
+{
+    background-color: lawngreen;
+}
+/* media query for responsiveness all, screen, speech, print*/
+@media screen and (min-width:801px)
+{
+    .container p {
+
+        width: 30%;
+        float: left;
+        padding: 10px
+
+    };
+    .p1{
+    background-color: blue;
+    }
+}

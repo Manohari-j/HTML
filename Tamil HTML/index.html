@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- external css commonly used -->
+    <link rel="stylesheet" href="../CSS/style.css" type="text/css">
+    <title>My own practice</title>
+    <!-- internall css: select an element first -->
+    <style type="text/css">
+
+      h2
+      {
+        color: orange;
+      }
+      p{
+        color: brown;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1 class="bluebold">Life Style</h1>
+
+    <a href="index.html">Home</a>
+    <a href="about.html">about us</a>
+    <a href="steps.html">Healthy Lifestyle</a>
+    <a href="tables.html">Schedule Table</a>
+    <p><b>Hello</b><i> Manohari!!</i></p>
+    <p><strong>Hello</strong><em> Structured attributes!!</em></p>
+    <h1>Heading 1</h1>
+    <!-- inline css property:value -->
+    <h2 style="color: green;text-decoration: underline;">Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <p>Subscript <sub>10</sub></p>
+    <p>Superscript <sup>TM</sup></p>
+    <P><q>Be positive</q><strike> negative</strike></P>
+    <p><abbr title="Indian Space Research Organization">ISRO</abbr></p>
+    <cite>--Cite look like this Remember every tag !!!</cite>
+    <br>
+    <dfn>---Defintion look like this</dfn>
+    <address>--Address looks like this Neville Drive</address>
+    <p>To make middle of a <span id="spancolor">sentence in different style or color</span> use span and its id in css</p>
+    <p>To make a group of text highlightred ot styled group it in div and use that id in css</p>
+    <p>To make a some set of headings styled asame use class and use that class in css</p>
+    <hr />
+    <h1>List</h1>
+    <h2 class="bluebold">Daily Schedule</h2>
+    <ol type="i">
+        <li>Exercise</li>
+        <li>Eat Healthy</li>
+        <li>Sleep well</li>
+        <li>Be positive</li>
+    </ol>
+
+    <h2 class="bluebold">Unordered Groceries</h2>
+    <ul>
+        <li>Apple</li>
+        <li>Crayons</li>
+        <li>Shorts</li>
+    </ul>
+    <!-- parent tag div -->
+    <div id="colorcode">
+      <!--  all tags inside parent tag is child tag -->
+      <h2>Definition List</h2>
+      <dl>
+          <dt id="conf">Confident</dt>
+          <dd>State of being positive</dd>
+          <dt>Courageous</dt>
+          <dd>Strong mindset</dd>
+          <dt>Block Elements</dt>
+          <dd>p, heading h, div, li, ul all are block elements no need of giving explicit line breaks</dd>
+          <dt>Inline elements</dt>
+          <dd>It continues in the same line a, img,span, strong, em, b,i</dd>
+          <dt>Escape sequences</dt>
+          <dd>& along with copy gives copywrite - &copy, &cent, &amp, &gt, &quot, &lt</dd>
+          <dt>iframe</dt>
+          <dd>to embed another page into current page, can embed audio,video,map using share and embed and copy link</dd>
+          <dt>Embed a Map</dt>
+          <dd>go to map, click share, embed a map, copy html</dd>
+          <dt>Meta tags</dt>
+          <dd>To inform search engine about this page</dd>
+      </dl>
+      <p>To check child tag selector <a href="">To check link</a></p>
+    </div>
+    <iframe src="../Forms/index.html" frameborder="0"></iframe>
+
+    <h2 id="colorcode">Map of Chicago</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190255.8460334488!2d-87.73196395!3d41.83373295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL!5e0!3m2!1sen!2sus!4v1734639212475!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <hr>
+    <!-- autoplay, loop, preload - when audio will be loaded: auto, none(no info about audio until played),metadata -->
+    <audio src="../media/file_example_MP3_1MG.mp3" controls>Audio format not supported</audio>
+    <hr>
+    <!-- muted, poster, height, width, controls, loop,poster - thumb nail, muted - initiall phase -->
+    <video controls ><source src="../media/file_example_MP4_480_1_5MG.mp4" type = "video/mp4"  > Video format not supported</video>
+    <hr>
+    <h1>Links</h1>
+    <a href="https://www.google.com" target="_blank">Click here</a>
+  </body>
+</html>

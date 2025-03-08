@@ -1,0 +1,79 @@
+
+/* one dimensional... either row by row or col by col */
+.boxes
+{
+    background-color: aqua;
+    min-height: 400px;
+    /* width: 400px; */
+    display: flex;
+    
+    /* main axis alignment  */
+    justify-content:center;
+    /* cross axis alignment */
+    align-items: center;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap ; */
+}
+.b
+{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border: 2px solid white;
+    
+}
+.b1
+{
+    /* align-self: flex-start; */
+    flex-shrink: 2;
+    /* flex: grow shrink basis; */
+}
+.b2
+{
+    /* flex: 1; */
+    flex-shrink: 1;
+}
+.b3
+{
+    /* flex-grow: 1; */
+    /* flex starting at 0 so flex grow will work perfectly */
+    /* flex-basis: 0; */
+}
+.b4
+{
+    /* flex-grow: 2;
+    flex-basis: 0; */
+}
+/* float separates in col but better approach is flex. flexible box */
+.container{
+    display: flex;
+    /* flex dir can be changed from row to col
+    main axis and cross axis */
+    flex-direction: column;
+    /* when flex is row, main axis is left, right and center
+    when flex is col, main axis is top, bottom, center */
+}
+p
+{
+    padding: 10px;
+}
+/* in flex width adjusts itself to avoid it use flex in para 
+order can be changed*/
+.p1 
+{
+    background-color:bisque;
+    flex: 2;
+    order: 2;
+}
+.p2
+{
+    background-color: aquamarine;
+    flex: 2;
+    order: 3;
+}
+.p3 
+{
+    background-color:rosybrown;
+    flex: 2;
+    order: 1;
+}

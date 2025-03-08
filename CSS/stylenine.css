@@ -1,0 +1,31 @@
+/* html{
+    font-size: 20px;
+} */
+/* default size 16px
+em:relative font size to current font size 20*1.5 */
+/* .box
+{
+    font-size: 1.5em;
+}*/
+/* relative to parent size 30px to 30*2 */
+/*.p1
+{
+    font-size: 2em;
+}*/
+/* root relative */
+/*.p2
+{
+    font-size: 2rem;
+} */
+
+/* figures change relative to screen */
+/* vw: viewport width vh: viewport height */
+/* displays the figure to half of the screen */
+/* % takes relative to parent so use vh and vw*/
+/* vmin/vmax:take both vh and vw and takes 50% from the min/max value */
+.box
+{
+    width: 50vw;
+    height: 50vh;
+    border: 2px solid black;
+}

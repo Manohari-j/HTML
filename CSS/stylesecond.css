@@ -1,0 +1,173 @@
+h3
+{
+    /* rgb format */
+    color: rgb(255,25,9);
+    /* Hexadecimal format */
+    color: #ffff00;
+    /*Hue - degree, saturation %, lightness % */
+    color:hsl(100, 33%, 44%);
+/* rgba, hsla - a:alpha value is for lack of transparency/opacity 0 to 1  */
+    background-color: rgba(183, 255, 0,.2);
+    
+    border: 1px dotted black;
+}
+
+/* font face : serif - times new roman, sans-serif - arial, monospace- 'courier new' */
+/* cursive - comic sansMS , Fantasy-Impact */
+/*quotes are given to font that has space in between */
+body
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    /* pixel is 1/125th of an inch. Default size is 16px */
+    font-size: 12px;
+    font-size: 75%;
+}
+/* em is a unit of measurement for font size that's relative 
+to the font size of the parent element */
+/* some special type of fonts ae not available in user's site, 
+to display it we have to buy licence/download the font and save 
+it in a folder. */
+h1{
+    font-size: 2em;
+    font-weight: bolder;
+    font-style: oblique;
+    font-stretch: ultra-expanded;
+    text-transform: uppercase;
+    text-decoration: underline;
+    /* text-decoration: none is used when underline is not needed for link */
+    letter-spacing: .5em;
+    word-spacing: .5em;
+    text-align: center;
+    /* vertical align when used with figure/table */
+    /* border: 1px dotted black; */
+    /* separate each attr for border */
+    /* border-width: 4px; */
+    border-style: double dashed;
+    /* border-color: green; */
+   /* border-top-width: 7px; */
+   /* top, right, bottom, left / top&bottom left&right top left&right bottom */
+   border-width: 7px 2px 7px 2px;
+    
+}
+a{
+    color: orange;
+    text-decoration: none;
+}
+/* mwasurements can be given in pixel, %,em */
+p
+{
+    line-height: 1.5em;
+    text-align: justify;
+    text-indent: 50px;
+    /* text-shadow: 2px 2px 2px gray; */
+    /* left/right top/bottom blur color */
+    /* thick style color of the border */
+    border: 1px dotted black;
+    
+    /* width: 500px; */
+    width: 50%;
+    height: 200px;
+    background-color: bisque;
+    /* overflow: scroll; */
+    /* padding: space between border and inside text */
+    padding: 15px;
+    /* margin: gap between border and outside elements */
+    margin: 20px auto 20px auto ;
+/* Horizontal offset, vertical offset, blur and color. Inset make inside show */
+    /*-10 px gives opposite side shadow  */
+/* box-shadow: inset 10px 10px 10px gray; */
+border: 30px solid;
+/*stretch, round, repeat*/
+border-image: url("/media/images.jpg") 30 round;
+    
+}
+
+.border
+{
+    border: 1px solid black;
+    width: 50%;
+    border-radius:80px 50px;
+    /* -moz-border-radius: 10px; */
+    -webkit-border-radius: 10px;
+}
+/* pseudo element */
+p::first-letter
+{
+    font-size:2em ;
+}
+p::first-line
+{
+    font-size: 2em;  
+}
+/*order should be maintained*/
+/* pseudo class for visited links */
+a:visited
+{
+    color: brown;
+}
+/* not visited links */
+a:link
+{
+    color: orange;
+}
+a:hover
+{
+    color: pink;
+}
+/* focussed when tab is clicked */
+a:focus
+{
+    color: green;
+}
+/* moment after click */
+a:active
+{
+    color:blueviolet;
+}
+
+/* to choose paragraph element only from class */
+
+/* p.pclass
+{
+    color: orange;
+} */
+
+/*To select a paragraph that has any attribute : [id], [class]*/
+/* p[class]
+{
+    color:red;
+} */
+/* p#para1 or p[id="para1"] */
+/* many classes for one element, to choose one class use ~ */
+
+p[class~=pclass]
+{
+    color: orange;
+}
+/*class name starts with p prefix filtering
+suffix filtering that ends with a lettr give $ */
+p[class$='p']
+{
+    color: red;
+}
+/* substring */
+p[class*= "clv"]
+{
+    color: green;
+}
+
+/* Begins with selector - attr^="val" 
+“Ends With” Selector – [attr$="val"] “Contains” Selector – [attr*="val"] */
+
+li{
+    display: inline;
+    margin: 10px;
+}
+.nat
+{
+    /* next elt takes over its place */
+    /* display: none; */
+    /*next elt don't takes over its place  */
+    visibility: hidden;
+}
