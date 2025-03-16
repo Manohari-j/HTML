@@ -1,0 +1,37 @@
+h1{
+    text-shadow: 5px 3px 3px aqua , -5px -3px 3px orange;/*Horizontal, vertical offset, blur,color*/
+}
+
+#box1
+{
+    width:100px;
+    height: 100px;
+    background-color: beige;
+    box-shadow: 5px 3px 3px grey;
+}
+
+body{
+    margin: 0px;
+}
+.box
+{
+    width:200px;
+    height: 200px;
+    font-size: 5em;
+    border: 5px solid;
+}
+
+#b1
+{
+    
+    background-color: red;
+   /* margin-left:auto;move to extreme right*/
+   margin:auto; /*move to center*/
+}
+
+#b2
+{
+    
+    background-color: blue;
+
+}

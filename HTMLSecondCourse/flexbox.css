@@ -1,0 +1,41 @@
+
+.container{
+    display: flex;
+    /*flex-direction:row;*/
+    /*justify-content: space-evenly;main axis - x*/
+    height: 90vh;
+    border: 10px solid black;
+    /*align-items:center ;cross axis- y*/
+    flex-wrap: wrap;/*to avoid squishing*/
+    align-content: flex-start;/*use along with flex wrap*/
+    column-gap: 1em;
+    row-gap: 1em;
+
+}
+.box{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    font-size: 8em;
+    border-radius: 10px;
+}
+
+#box1
+{
+    background-color:orangered ;
+    /*align-self: center; to separate each elt and align*/
+    /*order:1;
+    order:-1;*/
+}
+#box2
+{
+    background-color: green;
+}
+#box3
+{
+    background-color: yellow;
+}
+#box4
+{
+    background-color: orange;
+}

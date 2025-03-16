@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="index.php" method="POST" enctype="multipart/form-data">
+        <!--for is to move the cursor to inp box ... id should be of same name-->
+        <label for="username">UserName:</label>
+        <input type="text" placeholder="name" id="username" minlength="6" maxlength="15">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="abc@mail.com" id="email">
+        <br>
+        <label for="phone">Phone #:</label>
+        <input type="tel" placeholder="123-456-7890" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <br>
+        <label for="bday">BirthDate:</label>
+        <input type="date" id="bday">
+        <br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" min="0" max="99" value="1">
+        <br><!--to group them use name else all will be selected-->
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." id="Mr." name="title" >
+        <label for="Ms.">Ms.</label>
+        <input type="radio" id="Ms." id="Ms." name="title" >
+        <label for="PhD.">phD.</label>
+        <input type="radio" id="PhD." id="phD." name="title" >
+        <br>
+        <label for="payment">Payment</label>
+        <select name="payment" id="payment">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>        
+            <option value="giftcard">Giftcard</option>
+        </select>
+        <br>
+
+        <label for="subscribe">Subscribe</label>
+        <input type="checkbox" name="subscribe" id="subscribe">
+        <br>
+        <label for="comment">Comment:</label>
+        <textarea name="comment" id="comment" rows="5" cols="25"></textarea>
+        <br>
+        <label for="file">File:</label>
+        <input type="file" accept="image/jpg, file/docx">
+        
+        
+        
+        <br><br>
+        <input type="reset">
+        <input type="submit">
+        
+    </form>
+    
+</body>
+</html>

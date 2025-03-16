@@ -1,0 +1,58 @@
+/*font face rule*/
+
+@font-face {
+    font-family: Doto;
+    src: url(/fonts/Doto-VariableFont_ROND\,wght.ttf);
+}
+
+
+h1{
+    /*shorthand syntax for style, width, color*/
+    border: 10px solid hsl(116, 52%, 27%);
+    /*border-style: solid; dashed,dotted, double,groove, ridge,inset,outset, none
+    border-width: 20px;
+    border-color:hsl(116, 52%, 27%);*/
+    border-radius: 50px;
+    color: tomato;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+#p1
+{
+    color:rgb(102,222,255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*font-size: 18px;*/
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    /*1em - 100%, 1.1em 110%*/
+    border-bottom: 3px dashed blueviolet;
+    border-top: 3px dotted green;
+    border-left:3px solid brown;
+    border-right: 3px solid rgb(211, 226, 43);
+}  
+#p2
+{
+    color:#ff595f;
+}
+#p3
+{
+    color:green;
+    font-family: Doto;
+    
+    font-size: medium;
+    font-weight: bold;
+}
+#p4
+{
+    color:hsl(283,100%,64%);
+}
+
+.odd
+{
+    background-color: beige;
+}
+.even
+{
+    background-color: rgb(105, 218, 252);
+}

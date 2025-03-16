@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buttons</title>
+</head>
+<body>
+    <a href="https://www.google.com" target="_blank">
+    <button style="font-size: 25px; background-color:pink;color: brown; border-radius: 20px;">Click Here</button> 
+    </a>
+    <br>
+    <br>
+
+    <button  onclick="funscr()" style="font-size: 25px;background-color:pink;color: brown; border-radius: 20px;">Script</button>
+    <p id="scr">Welcome to Script!</p>
+    <script>
+        function funscr()
+        {
+            document.getElementById("scr").innerHTML = "Thank you for visiting!";
+
+        }
+    </script>
+</body>
+</html>

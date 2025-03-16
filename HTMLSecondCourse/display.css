@@ -1,0 +1,51 @@
+#sep{
+    background-color: yellow;
+    width: 100px;
+    height:100px;
+    display: inline-block;/* none erases dont take up the space.inline-block;inline;block;*/
+    /*visibility: hidden;hide, but takes up that space*/
+}
+span{
+    background-color: greenyellow;
+    width: 100px;
+    height:100px;
+    display:inline-block; /*inline-block;inline;block;*/
+}
+*{
+    box-sizing: border-box;
+}
+.box{
+    
+    border: 2px solid;
+    /*box-sizing: border-box;Disregards border and padding*/
+    height: auto;
+    width:50%;
+    float:left;
+    /*float: right; works only if there is space as we have border*/
+    padding: 25px;
+    /*padding-left: 25px;
+    padding:25px;
+    margin:25px;*/
+}
+
+.container{
+    background-color: aqua;
+    height: 100vh;
+}
+
+.box2{
+    
+    border: 2px solid; 
+    background-color: gray;   
+    height: auto;
+    width:50%;
+    float:left;
+    padding: 25px;
+    text-align: center;
+    /*max-width: 25%;priority than width*/
+    min-width: 75%;
+    min-height: 10%;
+    /*min/max height has no effect as the web page ends with content.
+    to show diff have another container that encloses box2*/
+    
+}

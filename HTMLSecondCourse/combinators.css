@@ -1,0 +1,22 @@
+#container{
+    border: 2px solid;
+}
+
+/*descendant empty space - all children are descendants*/
+#container p{
+    background-color: yellow;
+}
+/*child, not the grand child*/
+#container > p{
+    font-weight: bold;
+}
+
+/*that is not within the same div */
+#container ~ p{
+    background-color: blue;
+}
+
+/*adjacent sibling*/
+#container + p{
+    background-color: red;
+}

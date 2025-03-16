@@ -1,0 +1,29 @@
+h1::first-letter{
+    font-size: 2em;/*200%*/
+    color: orange;
+    font-style: italic;
+}
+p::first-line{
+    background-color: blanchedalmond;
+}
+p::selection{
+    background-color: red;
+    color: white;
+}
+
+#a::before{
+    content: "🍎";
+}
+#b::before{
+    content: "🍌";
+}
+#m::before{
+    content: "🥭";
+}
+#fruits li::after{
+    content: "🍴";
+}
+
+#fruits li::marker{
+    content: "✔️";
+}

@@ -1,0 +1,24 @@
+#box1{
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+    position:sticky;
+    top: 100px;
+    /*
+    top:100px;push down, for negative push up
+    left: 100px;push right, -ve push right
+    position: relative;
+    right: 0px;
+    bottom: 0px;*/
+}
+
+#box2{ 
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    position:absolute; /*box1 is the nearest ancestor*/
+    /*ancestor is box1 so it is relative to box1 when absolute*/
+    top:50px;
+    left: 50px;
+
+}

@@ -1,0 +1,26 @@
+body{
+    border:5px solid;
+    display: flow-root; /*To avoisd img hanging out of border*/
+    
+}
+.box{
+    width:100px;
+    height: 100px;
+    background-color: red;
+}
+
+#img1{
+    float:left;/*right;left;*/
+    margin-right: 10px;
+}
+#img2{
+    float:right;/*right;left;*/
+    margin-left: 10px;
+}
+div{
+    border:2px solid;
+    height: 50px;
+    overflow: clip;
+    overflow-clip-margin: 50px;/*how much can be overflown*/
+    /*auto can be set, it will change scroll or normal depending upon size of text*/
+}

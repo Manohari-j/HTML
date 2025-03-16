@@ -1,0 +1,76 @@
+
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    font-size: 5em;
+    text-align: center;
+    animation-name:slideLeft;/*glow; /*colorChange;fadeIn;needs opacity set to 0*/
+    /*fade;shrink;grow;rotate;slideDown;slideUp;slideRight;slideLeft;*/
+    animation-duration: 1s;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+    animation-play-state: paused;/*running;*/
+    animation-timing-function: steps(5)/*ease-in-out;*/
+    /*opacity: 0;*/
+}
+
+img{
+    width: 500px;
+    height: 500px;
+    animation-name:glow;
+    animation-duration: 1s;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-timing-function: steps(5)/*ease-in-out;*/
+    /*opacity: 0;*/
+
+}
+
+@keyframes slideLeft {
+    from{transform:translateX(300%) rotateZ(45deg) scale(0.5) ;}/*start from*/
+}
+@keyframes slideRight {
+    to{transform:translateX(300%) rotateZ(45deg) scale(0.5) ;}/*ends to*/
+}
+
+@keyframes slideUp {
+    from{transform:translatey(200%) rotateZ(45deg) scale(0.5) ;}/*start from*/
+}
+@keyframes slideDown {
+    to{transform:translatey(200%) rotateZ(45deg) scale(0.5) ;}/*ends to*/
+}
+@keyframes rotate{
+    25%{transform: rotatez(360deg);}
+}
+@keyframes grow{
+
+    50%{transform: scale(2);}
+}
+@keyframes shrink{
+
+    50%{transform: scale(0.5);}
+}
+
+@keyframes fade{
+
+    50%{opacity: 0;}
+}
+@keyframes fadeIn{
+
+    100%{opacity: 1;}
+}
+@keyframes colorChange{
+    0%{background-color: red;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: greenyellow;}
+    80%{background-color: green;}
+    100%{background-color: blueviolet;}
+}
+
+@keyframes glow{
+
+    50%{box-shadow: 10px 10px 15px yellow;}
+}

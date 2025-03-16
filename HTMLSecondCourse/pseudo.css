@@ -1,0 +1,60 @@
+button:hover{
+    font-size: 1.1em;
+    background-color: blueviolet;
+}
+
+button:active{
+    font-size: 1.1em;
+    background-color: red;
+}
+a:link{
+    color: green;
+}
+a:hover{
+    color: brown;
+}
+a:active{
+    color: orange;
+    font-size: 1.1em;
+}
+a:visited{
+    color: purple;
+    font-size: 1.1em;
+}
+
+li:hover{
+    background-color: yellow;
+
+}
+
+li:not(:hover){
+    background-color: orange;
+
+}
+
+/*3n for every 3rd elt, 5n for every 5th
+odd and even
+3n+1 to start from 1 and jump to 3rd elt
+5n+2 to start from 2nd and jump to 5th elt*/
+li:nth-child(odd)
+{
+    background-color: yellowgreen;
+}
+li:nth-child(even)
+{
+    background-color: yellow;
+}
+li:nth-child(8) 
+{
+    background-color: aquamarine;
+}
+
+#greet p{
+    background-color: aqua;
+    padding: 5px;
+    display: none;
+}
+
+#greet:hover p{
+    display: block;
+}
